@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Music Player</title>
+        <link rel="Stylesheet" href="P3C.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    </head>
+    <body>
+        
+        <div class="main">
+            <img class="pic" src="Images/U.jpg">
+            <h1>Kollywood Love &#8226; Magical Melodies</h1>
+            <h3>BY MADHUSRI J &#8226; 1M LIKES </h3>
+
+           
+            
+        
+        </div>  
+        <div class="mainbg"> 
+            <div class="details">
+                <div class="now-playing">PLAYING 0 OF 10</div>
+                <div class="track-art"></div>
+                <div class="track-name">Kollywood Love</div>
+                <div class="track-artist"></div>
+              </div>
+            <div class="music">
+                
+                <div class="buttons">
+                    <div class="prev-track" onclick="prevTrack()">
+                      <i class="fa fa-step-backward fa-2x"></i>
+                    </div>
+                    <div class="playpause-track" onclick="playpauseTrack()">
+                      <i class="fa fa-play-circle fa-5x"></i>
+                    </div>
+                    <div class="next-track" onclick="nextTrack()">
+                      <i class="fa fa-step-forward fa-2x"></i>
+                    </div>
+                  </div>
+                  <div class="slider_container">
+                    <div class="current-time">00:00</div>
+                    <input type="range" min="1" max="100"
+                      value="0" class="seek_slider" onchange="seekTo()">
+                    <div class="total-duration">00:00</div>
+                  </div>
+                  <div class="slider_container">
+                    <i class="fa fa-volume-down"></i>
+                    <input type="range" min="1" max="100"
+                      value="99" class="volume_slider" onchange="setVolume()">
+                    <i class="fa fa-volume-up"></i>
+                  </div>
+                </div>
+            </div>
+            
+        </div>
+        <nav>
+            <div class="logo">
+                <img src="Images/logo.png">
+            </div>
+        </nav>
+        
+    <script src="P-3.js"></script>    
+    </body>
+</html>
